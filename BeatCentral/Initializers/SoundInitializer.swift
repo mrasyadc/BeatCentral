@@ -7,4 +7,5 @@
 
 struct SoundInitializer {
     static let KICK = AudioManager(audioFileName: "kick", fileType: "wav")
+    static let BASS = AudioManager(audioFileName: "bass", fileType: "wav")
 }

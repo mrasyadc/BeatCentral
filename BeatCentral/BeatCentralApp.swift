@@ -28,7 +28,8 @@ struct BeatCentralApp: App {
     var body: some Scene {
         WindowGroup {
 //            KeyboardView(detector: KeyboardManager.spaceDetector)
-            KeyboardNewView().environmentObject(keyboardObserver)
+//            KeyboardNewView().environmentObject(keyboardObserver)
+            ContentView()
         }
         .modelContainer(sharedModelContainer)
     }
