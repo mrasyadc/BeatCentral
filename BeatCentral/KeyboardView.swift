@@ -7,12 +7,24 @@
 
 import SwiftUI
 
-struct KeyboardView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct KeyboardView: View
+{
+    @StateObject var detector: SpaceDetector
+    
+    var body: some View
+    {
+        Text(
+            detector.isPressed
+                ? "Spacebar is pressed"
+                : "Spacebar is not pressed"
+        ).padding()
     }
 }
 
-#Preview {
-    KeyboardView()
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        KeyboardView(detector: KeyboardManager.spaceDetector)
+    }
 }

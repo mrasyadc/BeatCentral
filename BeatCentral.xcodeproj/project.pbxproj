@@ -15,6 +15,13 @@
 		9D1078122BF3258F003AEC57 /* BeatCentralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1078112BF3258F003AEC57 /* BeatCentralTests.swift */; };
 		9D10781C2BF3258F003AEC57 /* BeatCentralUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10781B2BF3258F003AEC57 /* BeatCentralUITests.swift */; };
 		9D10781E2BF3258F003AEC57 /* BeatCentralUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10781D2BF3258F003AEC57 /* BeatCentralUITestsLaunchTests.swift */; };
+		9D22E9A42BF5A0E600438A3E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9A32BF5A0E600438A3E /* AudioManager.swift */; };
+		9D22E9A72BF5A6C600438A3E /* SoundInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9A62BF5A6C600438A3E /* SoundInitializer.swift */; };
+		9D22E9A92BF5A91E00438A3E /* bass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E9A82BF5A91D00438A3E /* bass.wav */; };
+		9D22E9AB2BF6C1AD00438A3E /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E9AA2BF6C1AD00438A3E /* kick.wav */; };
+		9D22E9AF2BF6C55900438A3E /* SwiftUIKeyDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9AE2BF6C55900438A3E /* SwiftUIKeyDetection.swift */; };
+		9D22E9B12BF6C5DE00438A3E /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */; };
+		9D22E9B32BF6C64100438A3E /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B22BF6C64100438A3E /* KeyboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		9D1078172BF3258F003AEC57 /* BeatCentralUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeatCentralUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D10781B2BF3258F003AEC57 /* BeatCentralUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatCentralUITests.swift; sourceTree = "<group>"; };
 		9D10781D2BF3258F003AEC57 /* BeatCentralUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatCentralUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D22E9A32BF5A0E600438A3E /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		9D22E9A62BF5A6C600438A3E /* SoundInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundInitializer.swift; sourceTree = "<group>"; };
+		9D22E9A82BF5A91D00438A3E /* bass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bass.wav; path = ../../../../Downloads/bass.wav; sourceTree = "<group>"; };
+		9D22E9AA2BF6C1AD00438A3E /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = kick.wav; path = ../../../../Downloads/kick.wav; sourceTree = "<group>"; };
+		9D22E9AE2BF6C55900438A3E /* SwiftUIKeyDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIKeyDetection.swift; sourceTree = "<group>"; };
+		9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
+		9D22E9B22BF6C64100438A3E /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +111,14 @@
 		9D1077FC2BF3258D003AEC57 /* BeatCentral */ = {
 			isa = PBXGroup;
 			children = (
+				9D22E9A52BF5A6A900438A3E /* Initializers */,
+				9D22E9A22BF5A0DA00438A3E /* Managers */,
 				9D1077FD2BF3258D003AEC57 /* BeatCentralApp.swift */,
+				9D22E9AE2BF6C55900438A3E /* SwiftUIKeyDetection.swift */,
 				9D1077FF2BF3258D003AEC57 /* ContentView.swift */,
+				9D22E9B22BF6C64100438A3E /* KeyboardView.swift */,
+				9D22E9A82BF5A91D00438A3E /* bass.wav */,
+				9D22E9AA2BF6C1AD00438A3E /* kick.wav */,
 				9D1078012BF3258D003AEC57 /* Item.swift */,
 				9D1078032BF3258F003AEC57 /* Assets.xcassets */,
 				9D1078082BF3258F003AEC57 /* BeatCentral.entitlements */,
@@ -130,6 +150,23 @@
 				9D10781D2BF3258F003AEC57 /* BeatCentralUITestsLaunchTests.swift */,
 			);
 			path = BeatCentralUITests;
+			sourceTree = "<group>";
+		};
+		9D22E9A22BF5A0DA00438A3E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9D22E9A32BF5A0E600438A3E /* AudioManager.swift */,
+				9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9D22E9A52BF5A6A900438A3E /* Initializers */ = {
+			isa = PBXGroup;
+			children = (
+				9D22E9A62BF5A6C600438A3E /* SoundInitializer.swift */,
+			);
+			path = Initializers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +273,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D22E9A92BF5A91E00438A3E /* bass.wav in Resources */,
 				9D1078072BF3258F003AEC57 /* Preview Assets.xcassets in Resources */,
+				9D22E9AB2BF6C1AD00438A3E /* kick.wav in Resources */,
 				9D1078042BF3258F003AEC57 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D1078002BF3258D003AEC57 /* ContentView.swift in Sources */,
+				9D22E9B32BF6C64100438A3E /* KeyboardView.swift in Sources */,
+				9D22E9AF2BF6C55900438A3E /* SwiftUIKeyDetection.swift in Sources */,
 				9D1078022BF3258D003AEC57 /* Item.swift in Sources */,
+				9D22E9A42BF5A0E600438A3E /* AudioManager.swift in Sources */,
+				9D22E9A72BF5A6C600438A3E /* SoundInitializer.swift in Sources */,
+				9D22E9B12BF6C5DE00438A3E /* KeyboardManager.swift in Sources */,
 				9D1077FE2BF3258D003AEC57 /* BeatCentralApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

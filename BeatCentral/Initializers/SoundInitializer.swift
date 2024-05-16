@@ -5,4 +5,6 @@
 //  Created by Muhammad Rasyad Caesarardhi on 16/05/24.
 //
 
-import Foundation
+struct SoundInitializer {
+    static let KICK = AudioManager(audioFileName: "kick", fileType: "wav")
+}
