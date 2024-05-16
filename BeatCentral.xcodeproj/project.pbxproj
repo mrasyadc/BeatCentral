@@ -22,6 +22,8 @@
 		9D22E9AF2BF6C55900438A3E /* SwiftUIKeyDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9AE2BF6C55900438A3E /* SwiftUIKeyDetection.swift */; };
 		9D22E9B12BF6C5DE00438A3E /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */; };
 		9D22E9B32BF6C64100438A3E /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B22BF6C64100438A3E /* KeyboardView.swift */; };
+		9D22E9B52BF6CF3C00438A3E /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B42BF6CF3C00438A3E /* KeyboardObserver.swift */; };
+		9D22E9B72BF6CF6D00438A3E /* KeyboardNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B62BF6CF6D00438A3E /* KeyboardNewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		9D22E9AE2BF6C55900438A3E /* SwiftUIKeyDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIKeyDetection.swift; sourceTree = "<group>"; };
 		9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		9D22E9B22BF6C64100438A3E /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		9D22E9B42BF6CF3C00438A3E /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		9D22E9B62BF6CF6D00438A3E /* KeyboardNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 				9D22E9AE2BF6C55900438A3E /* SwiftUIKeyDetection.swift */,
 				9D1077FF2BF3258D003AEC57 /* ContentView.swift */,
 				9D22E9B22BF6C64100438A3E /* KeyboardView.swift */,
+				9D22E9B62BF6CF6D00438A3E /* KeyboardNewView.swift */,
 				9D22E9A82BF5A91D00438A3E /* bass.wav */,
 				9D22E9AA2BF6C1AD00438A3E /* kick.wav */,
 				9D1078012BF3258D003AEC57 /* Item.swift */,
@@ -157,6 +162,7 @@
 			children = (
 				9D22E9A32BF5A0E600438A3E /* AudioManager.swift */,
 				9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */,
+				9D22E9B42BF6CF3C00438A3E /* KeyboardObserver.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -302,10 +308,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D1078002BF3258D003AEC57 /* ContentView.swift in Sources */,
+				9D22E9B52BF6CF3C00438A3E /* KeyboardObserver.swift in Sources */,
 				9D22E9B32BF6C64100438A3E /* KeyboardView.swift in Sources */,
 				9D22E9AF2BF6C55900438A3E /* SwiftUIKeyDetection.swift in Sources */,
 				9D1078022BF3258D003AEC57 /* Item.swift in Sources */,
 				9D22E9A42BF5A0E600438A3E /* AudioManager.swift in Sources */,
+				9D22E9B72BF6CF6D00438A3E /* KeyboardNewView.swift in Sources */,
 				9D22E9A72BF5A6C600438A3E /* SoundInitializer.swift in Sources */,
 				9D22E9B12BF6C5DE00438A3E /* KeyboardManager.swift in Sources */,
 				9D1077FE2BF3258D003AEC57 /* BeatCentralApp.swift in Sources */,

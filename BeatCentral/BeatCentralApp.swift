@@ -10,9 +10,7 @@ import SwiftData
 
 @main
 struct BeatCentralApp: App {
-    init() {
-        KeyboardManager.start()
-    }
+    @StateObject var keyboardObserver = KeyboardObserver()
     
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
@@ -29,7 +27,8 @@ struct BeatCentralApp: App {
 
     var body: some Scene {
         WindowGroup {
-            KeyboardView(detector: KeyboardManager.spaceDetector)
+//            KeyboardView(detector: KeyboardManager.spaceDetector)
+            KeyboardNewView().environmentObject(keyboardObserver)
         }
         .modelContainer(sharedModelContainer)
     }
