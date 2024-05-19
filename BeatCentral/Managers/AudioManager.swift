@@ -8,55 +8,41 @@
 import AVFoundation
 
 final class AudioManager {
-    private var audioPlayer: AVAudioPlayer?
-    private var audioQueue: DispatchQueue? = DispatchQueue.global()
-    private var isSoundPlaying: Bool = false
     private var audioFileName: String
     private var audioFileType: String
+    private var audioPlayer: AVAudioPlayer
+    
     
     init?(audioFileName: String, fileType: String) {
         self.audioFileName = audioFileName
         self.audioFileType = fileType
-            guard let fileURL = Bundle.main.url(forResource: audioFileName, withExtension: fileType) else {
-                print("Audio file not found")
-                return nil
-            }
-            
-            do {
-                audioPlayer = try AVAudioPlayer(contentsOf: fileURL)
-                audioPlayer?.prepareToPlay()
-            } catch {
-                print("Error initializing audio player: \(error)")
-                return nil
-            }
+        self.audioPlayer = AVAudioPlayer()
         }
 
     func playSound() {
-        isSoundPlaying = true
-
         DispatchQueue.global().async {
-            guard let fileURL = Bundle.main.url(forResource: self.audioFileName, withExtension: self.audioFileType) else {
-                print("Audio file not found")
-//                return nil
-            }
-            
-            do {
-                self.audioPlayer = try AVAudioPlayer(contentsOf: fileURL)
-                self.audioPlayer?.prepareToPlay()
-            } catch {
-                print("Error initializing audio player: \(error)")
-//                return nil
-            }
+            self._playSound(soundFileName: self.audioFileName, fileType: self.audioFileType)
         }
                     
     }
-
-    func stopSound() {
-        isSoundPlaying = false
-        audioPlayer?.stop()
-    }
     
-    func isPlaying()->Bool {
-        return isSoundPlaying
+    func _playSound(soundFileName: String, fileType: String) {
+        // Get the URL of the sound file
+        if let soundURL = Bundle.main.url(forResource: soundFileName, withExtension: fileType) {
+            do {
+                // Initialize the audio player with the sound file URL
+                audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+                // Prepare the audio player for playback
+                audioPlayer.prepareToPlay()
+                // Play the sound
+                audioPlayer.play()
+            } catch {
+                // Handle the error if the audio player could not be initialized
+                print("Error: Could not initialize AVAudioPlayer - \(error.localizedDescription)")
+            }
+        } else {
+            // Handle the error if the sound file could not be found
+            print("Error: Sound file not found")
+        }
     }
 }

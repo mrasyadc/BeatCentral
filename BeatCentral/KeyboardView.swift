@@ -9,15 +9,21 @@ import SwiftUI
 
 struct KeyboardView: View
 {
-    @StateObject var detector: SpaceDetector
-    
+    @StateObject var SpaceDetector: SpaceDetector
+//    @StateObject var BDetector: BDetector
     var body: some View
     {
         Text(
-            detector.isPressed
+            SpaceDetector.isPressed
                 ? "Spacebar is pressed"
                 : "Spacebar is not pressed"
         ).padding()
+//        Text(
+//            BDetector.isPressed
+//                ? "B is pressed"
+//                : "B is not pressed"
+//        ).padding()
+        
     }
 }
 
@@ -25,6 +31,6 @@ struct KeyboardView: View
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        KeyboardView(detector: KeyboardManager.spaceDetector)
-    }
+        KeyboardView(SpaceDetector: KeyboardManager.spaceDetector /*BDetector: KeyboardManager.bDetector)*/
+    )}
 }

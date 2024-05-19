@@ -19,7 +19,6 @@
 		9D22E9A72BF5A6C600438A3E /* SoundInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9A62BF5A6C600438A3E /* SoundInitializer.swift */; };
 		9D22E9A92BF5A91E00438A3E /* bass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E9A82BF5A91D00438A3E /* bass.wav */; };
 		9D22E9AB2BF6C1AD00438A3E /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E9AA2BF6C1AD00438A3E /* kick.wav */; };
-		9D22E9AF2BF6C55900438A3E /* SwiftUIKeyDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9AE2BF6C55900438A3E /* SwiftUIKeyDetection.swift */; };
 		9D22E9B12BF6C5DE00438A3E /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */; };
 		9D22E9B32BF6C64100438A3E /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B22BF6C64100438A3E /* KeyboardView.swift */; };
 		9D22E9B52BF6CF3C00438A3E /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B42BF6CF3C00438A3E /* KeyboardObserver.swift */; };
@@ -60,7 +59,6 @@
 		9D22E9A62BF5A6C600438A3E /* SoundInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundInitializer.swift; sourceTree = "<group>"; };
 		9D22E9A82BF5A91D00438A3E /* bass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bass.wav; path = ../../../../Downloads/bass.wav; sourceTree = "<group>"; };
 		9D22E9AA2BF6C1AD00438A3E /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = kick.wav; path = ../../../../Downloads/kick.wav; sourceTree = "<group>"; };
-		9D22E9AE2BF6C55900438A3E /* SwiftUIKeyDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIKeyDetection.swift; sourceTree = "<group>"; };
 		9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		9D22E9B22BF6C64100438A3E /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		9D22E9B42BF6CF3C00438A3E /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				9D22E9A52BF5A6A900438A3E /* Initializers */,
 				9D22E9A22BF5A0DA00438A3E /* Managers */,
 				9D1077FD2BF3258D003AEC57 /* BeatCentralApp.swift */,
-				9D22E9AE2BF6C55900438A3E /* SwiftUIKeyDetection.swift */,
 				9D1077FF2BF3258D003AEC57 /* ContentView.swift */,
 				9D22E9B22BF6C64100438A3E /* KeyboardView.swift */,
 				9D22E9B62BF6CF6D00438A3E /* KeyboardNewView.swift */,
@@ -310,7 +307,6 @@
 				9D1078002BF3258D003AEC57 /* ContentView.swift in Sources */,
 				9D22E9B52BF6CF3C00438A3E /* KeyboardObserver.swift in Sources */,
 				9D22E9B32BF6C64100438A3E /* KeyboardView.swift in Sources */,
-				9D22E9AF2BF6C55900438A3E /* SwiftUIKeyDetection.swift in Sources */,
 				9D1078022BF3258D003AEC57 /* Item.swift in Sources */,
 				9D22E9A42BF5A0E600438A3E /* AudioManager.swift in Sources */,
 				9D22E9B72BF6CF6D00438A3E /* KeyboardNewView.swift in Sources */,
