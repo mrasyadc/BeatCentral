@@ -17,12 +17,21 @@
 		9D10781E2BF3258F003AEC57 /* BeatCentralUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10781D2BF3258F003AEC57 /* BeatCentralUITestsLaunchTests.swift */; };
 		9D22E9A42BF5A0E600438A3E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9A32BF5A0E600438A3E /* AudioManager.swift */; };
 		9D22E9A72BF5A6C600438A3E /* SoundInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9A62BF5A6C600438A3E /* SoundInitializer.swift */; };
-		9D22E9A92BF5A91E00438A3E /* bass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E9A82BF5A91D00438A3E /* bass.wav */; };
-		9D22E9AB2BF6C1AD00438A3E /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D22E9AA2BF6C1AD00438A3E /* kick.wav */; };
 		9D22E9B12BF6C5DE00438A3E /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */; };
 		9D22E9B32BF6C64100438A3E /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B22BF6C64100438A3E /* KeyboardView.swift */; };
 		9D22E9B52BF6CF3C00438A3E /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B42BF6CF3C00438A3E /* KeyboardObserver.swift */; };
 		9D22E9B72BF6CF6D00438A3E /* KeyboardNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B62BF6CF6D00438A3E /* KeyboardNewView.swift */; };
+		9D8E76AA2BFB237900E7E63D /* snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76A22BFB237900E7E63D /* snare.wav */; };
+		9D8E76AB2BFB237900E7E63D /* hihat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76A32BFB237900E7E63D /* hihat.wav */; };
+		9D8E76AC2BFB237900E7E63D /* ride.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76A42BFB237900E7E63D /* ride.wav */; };
+		9D8E76AD2BFB237900E7E63D /* crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76A52BFB237900E7E63D /* crash.wav */; };
+		9D8E76AE2BFB237900E7E63D /* floortom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76A62BFB237900E7E63D /* floortom.wav */; };
+		9D8E76AF2BFB237900E7E63D /* tomlow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76A72BFB237900E7E63D /* tomlow.wav */; };
+		9D8E76B02BFB237900E7E63D /* hihatopen.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76A82BFB237900E7E63D /* hihatopen.wav */; };
+		9D8E76B12BFB237900E7E63D /* tomhigh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76A92BFB237900E7E63D /* tomhigh.wav */; };
+		9D8E76B32BFB2BD000E7E63D /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76B22BFB2BD000E7E63D /* kick.wav */; };
+		9D8E76B52BFB2C0900E7E63D /* KeyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8E76B42BFB2C0900E7E63D /* KeyMapView.swift */; };
+		9DDB08F32BFC224F006B75C2 /* Snare_12_649.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9DDB08F22BFC224E006B75C2 /* Snare_12_649.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +66,21 @@
 		9D10781D2BF3258F003AEC57 /* BeatCentralUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatCentralUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9D22E9A32BF5A0E600438A3E /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		9D22E9A62BF5A6C600438A3E /* SoundInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundInitializer.swift; sourceTree = "<group>"; };
-		9D22E9A82BF5A91D00438A3E /* bass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bass.wav; path = ../../../../Downloads/bass.wav; sourceTree = "<group>"; };
-		9D22E9AA2BF6C1AD00438A3E /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = kick.wav; path = ../../../../Downloads/kick.wav; sourceTree = "<group>"; };
 		9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		9D22E9B22BF6C64100438A3E /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		9D22E9B42BF6CF3C00438A3E /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		9D22E9B62BF6CF6D00438A3E /* KeyboardNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNewView.swift; sourceTree = "<group>"; };
+		9D8E76A22BFB237900E7E63D /* snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snare.wav; sourceTree = "<group>"; };
+		9D8E76A32BFB237900E7E63D /* hihat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hihat.wav; sourceTree = "<group>"; };
+		9D8E76A42BFB237900E7E63D /* ride.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ride.wav; sourceTree = "<group>"; };
+		9D8E76A52BFB237900E7E63D /* crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crash.wav; sourceTree = "<group>"; };
+		9D8E76A62BFB237900E7E63D /* floortom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = floortom.wav; sourceTree = "<group>"; };
+		9D8E76A72BFB237900E7E63D /* tomlow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tomlow.wav; sourceTree = "<group>"; };
+		9D8E76A82BFB237900E7E63D /* hihatopen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hihatopen.wav; sourceTree = "<group>"; };
+		9D8E76A92BFB237900E7E63D /* tomhigh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tomhigh.wav; sourceTree = "<group>"; };
+		9D8E76B22BFB2BD000E7E63D /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kick.wav; sourceTree = "<group>"; };
+		9D8E76B42BFB2C0900E7E63D /* KeyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyMapView.swift; sourceTree = "<group>"; };
+		9DDB08F22BFC224E006B75C2 /* Snare_12_649.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Snare_12_649.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +135,21 @@
 				9D22E9A22BF5A0DA00438A3E /* Managers */,
 				9D1077FD2BF3258D003AEC57 /* BeatCentralApp.swift */,
 				9D1077FF2BF3258D003AEC57 /* ContentView.swift */,
+				9D8E76B42BFB2C0900E7E63D /* KeyMapView.swift */,
 				9D22E9B22BF6C64100438A3E /* KeyboardView.swift */,
 				9D22E9B62BF6CF6D00438A3E /* KeyboardNewView.swift */,
-				9D22E9A82BF5A91D00438A3E /* bass.wav */,
-				9D22E9AA2BF6C1AD00438A3E /* kick.wav */,
 				9D1078012BF3258D003AEC57 /* Item.swift */,
 				9D1078032BF3258F003AEC57 /* Assets.xcassets */,
+				9D8E76A52BFB237900E7E63D /* crash.wav */,
+				9DDB08F22BFC224E006B75C2 /* Snare_12_649.wav */,
+				9D8E76A62BFB237900E7E63D /* floortom.wav */,
+				9D8E76A32BFB237900E7E63D /* hihat.wav */,
+				9D8E76B22BFB2BD000E7E63D /* kick.wav */,
+				9D8E76A82BFB237900E7E63D /* hihatopen.wav */,
+				9D8E76A42BFB237900E7E63D /* ride.wav */,
+				9D8E76A22BFB237900E7E63D /* snare.wav */,
+				9D8E76A92BFB237900E7E63D /* tomhigh.wav */,
+				9D8E76A72BFB237900E7E63D /* tomlow.wav */,
 				9D1078082BF3258F003AEC57 /* BeatCentral.entitlements */,
 				9D1078052BF3258F003AEC57 /* Preview Content */,
 			);
@@ -276,10 +303,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D22E9A92BF5A91E00438A3E /* bass.wav in Resources */,
+				9D8E76AF2BFB237900E7E63D /* tomlow.wav in Resources */,
+				9DDB08F32BFC224F006B75C2 /* Snare_12_649.wav in Resources */,
+				9D8E76AD2BFB237900E7E63D /* crash.wav in Resources */,
+				9D8E76AC2BFB237900E7E63D /* ride.wav in Resources */,
+				9D8E76B12BFB237900E7E63D /* tomhigh.wav in Resources */,
+				9D8E76AE2BFB237900E7E63D /* floortom.wav in Resources */,
 				9D1078072BF3258F003AEC57 /* Preview Assets.xcassets in Resources */,
-				9D22E9AB2BF6C1AD00438A3E /* kick.wav in Resources */,
+				9D8E76AA2BFB237900E7E63D /* snare.wav in Resources */,
+				9D8E76B02BFB237900E7E63D /* hihatopen.wav in Resources */,
 				9D1078042BF3258F003AEC57 /* Assets.xcassets in Resources */,
+				9D8E76AB2BFB237900E7E63D /* hihat.wav in Resources */,
+				9D8E76B32BFB2BD000E7E63D /* kick.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +342,7 @@
 				9D1078002BF3258D003AEC57 /* ContentView.swift in Sources */,
 				9D22E9B52BF6CF3C00438A3E /* KeyboardObserver.swift in Sources */,
 				9D22E9B32BF6C64100438A3E /* KeyboardView.swift in Sources */,
+				9D8E76B52BFB2C0900E7E63D /* KeyMapView.swift in Sources */,
 				9D1078022BF3258D003AEC57 /* Item.swift in Sources */,
 				9D22E9A42BF5A0E600438A3E /* AudioManager.swift in Sources */,
 				9D22E9B72BF6CF6D00438A3E /* KeyboardNewView.swift in Sources */,
