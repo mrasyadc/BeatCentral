@@ -23,10 +23,10 @@ struct KeyMapView: View {
 //                    Debug description: \(keyPress.debugDescription)
 //                """)
                 switch keyPress.characters {
-                case "z":
+                case "x":
                     SoundInitializer.HIHATOPEN?.playSound()
                     drumState.isHihatOpenPressed.toggle()
-                case "x":
+                case "cs":
                     SoundInitializer.HIHAT?.playSound()
                     drumState.isHihatPressed.toggle()
                 case "v":
