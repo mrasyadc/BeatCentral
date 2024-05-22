@@ -18,66 +18,29 @@ struct Drum {
     var isFloorTomPressed = false
     var isCrashPressed = false
     var isRidePressed = false
+
+    mutating func setAllFalse() {
+        isHihatOpenPressed = false
+        isHihatPressed = false
+        isSnarePressed = false
+        isKickPressed = false
+        isTomHighPressed = false
+        isTomLowPressed = false
+        isFloorTomPressed = false
+        isCrashPressed = false
+        isRidePressed = false
+    }
 }
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
-    @FocusState private var isFocused: Bool
+    @FocusState var isFocused: Bool
     @State private var drumState = Drum()
     var body: some View {
 //        Empty Text is used as focuseable view
-        Text("").focusable()
-            .focused($isFocused)
-            .onKeyPress(.return) {
-                print("Return key pressed!")
-                return .handled
-            }
-            .onKeyPress(phases: .down, action: { keyPress in
-                print("""
-                    New key event:
-                    Key: \(keyPress.characters)
-                    Modifiers: \(keyPress.modifiers)
-                    Phase: \(keyPress.phase)
-                    Debug description: \(keyPress.debugDescription)
-                """)
-                switch keyPress.characters {
-                case "z":
-                    SoundInitializer.HIHATOPEN?.playSound()
-                case "x":
-                    SoundInitializer.HIHAT?.playSound()
-                case "v":
-                    SoundInitializer.SNARE?.playSound()
-                case "b":
-                    SoundInitializer.KICK?.playSound()
-                case "g":
-                    SoundInitializer.TOMHIGH?.playSound()
-                case "h":
-                    SoundInitializer.TOMLOW?.playSound()
-                case "j":
-                    SoundInitializer.FLOORTOM?.playSound()
-                case "r":
-                    SoundInitializer.CRASH?.playSound()
-                case "y":
-                    SoundInitializer.RIDE?.playSound()
-                default:
-                    print("default")
-                }
+        KeyMapView(isFocused: $isFocused, drumState: $drumState)
 
-                return .handled
-            })
-            .onKeyPress(.space, phases: .down) { _ in
-                print("Space key pressed!")
-                drumState.isKickPressed.toggle()
-                SoundInitializer.KICK?.playSound()
-                return .handled
-            }.onKeyPress(.space, phases: .up, action: { _ in
-                drumState.isKickPressed.toggle()
-                return .handled
-            })
-            .onAppear {
-                isFocused = true
-            }
         Button(action: {
             SoundInitializer.KICK?.playSound()
         }) {
