@@ -131,6 +131,7 @@
 		9D1077FC2BF3258D003AEC57 /* BeatCentral */ = {
 			isa = PBXGroup;
 			children = (
+				9DC2427A2BFD9EE30008572D /* Audio */,
 				9D22E9A52BF5A6A900438A3E /* Initializers */,
 				9D22E9A22BF5A0DA00438A3E /* Managers */,
 				9D1077FD2BF3258D003AEC57 /* BeatCentralApp.swift */,
@@ -140,16 +141,6 @@
 				9D22E9B62BF6CF6D00438A3E /* KeyboardNewView.swift */,
 				9D1078012BF3258D003AEC57 /* Item.swift */,
 				9D1078032BF3258F003AEC57 /* Assets.xcassets */,
-				9D8E76A52BFB237900E7E63D /* crash.wav */,
-				9DDB08F22BFC224E006B75C2 /* Snare_12_649.wav */,
-				9D8E76A62BFB237900E7E63D /* floortom.wav */,
-				9D8E76A32BFB237900E7E63D /* hihat.wav */,
-				9D8E76B22BFB2BD000E7E63D /* kick.wav */,
-				9D8E76A82BFB237900E7E63D /* hihatopen.wav */,
-				9D8E76A42BFB237900E7E63D /* ride.wav */,
-				9D8E76A22BFB237900E7E63D /* snare.wav */,
-				9D8E76A92BFB237900E7E63D /* tomhigh.wav */,
-				9D8E76A72BFB237900E7E63D /* tomlow.wav */,
 				9D1078082BF3258F003AEC57 /* BeatCentral.entitlements */,
 				9D1078052BF3258F003AEC57 /* Preview Content */,
 			);
@@ -197,6 +188,23 @@
 				9D22E9A62BF5A6C600438A3E /* SoundInitializer.swift */,
 			);
 			path = Initializers;
+			sourceTree = "<group>";
+		};
+		9DC2427A2BFD9EE30008572D /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				9D8E76A52BFB237900E7E63D /* crash.wav */,
+				9DDB08F22BFC224E006B75C2 /* Snare_12_649.wav */,
+				9D8E76A62BFB237900E7E63D /* floortom.wav */,
+				9D8E76A32BFB237900E7E63D /* hihat.wav */,
+				9D8E76B22BFB2BD000E7E63D /* kick.wav */,
+				9D8E76A82BFB237900E7E63D /* hihatopen.wav */,
+				9D8E76A42BFB237900E7E63D /* ride.wav */,
+				9D8E76A22BFB237900E7E63D /* snare.wav */,
+				9D8E76A92BFB237900E7E63D /* tomhigh.wav */,
+				9D8E76A72BFB237900E7E63D /* tomlow.wav */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
