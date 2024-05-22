@@ -5,33 +5,14 @@
 //  Created by Muhammad Rasyad Caesarardhi on 14/05/24.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @main
 struct BeatCentralApp: App {
-//    @StateObject var keyboardObserver = KeyboardObserver()
-    
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
     var body: some Scene {
         WindowGroup {
-//            KeyboardView(SpaceDetector: KeyboardManager.spaceDetector, BDetector: KeyboardManager.bDetector)
-//            KeyboardView(SpaceDetector: KeyboardManager.spaceDetector)
-//            KeyboardNewView().environmentObject(keyboardObserver)
             ContentView()
         }
-        .modelContainer(sharedModelContainer)
     }
 }
