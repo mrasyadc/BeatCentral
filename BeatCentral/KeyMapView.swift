@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct KeyMapView: View {
-    var isFocused: FocusState<Bool>.Binding
+    @FocusState var isFocused: Bool
     @Binding var drumState: Drum
 
     var body: some View {
         Text("").focusable()
-            .focused(isFocused)
+            .focused($isFocused)
+            .onAppear {
+                isFocused = true
+            }
             .onKeyPress(phases: .down, action: { keyPress in
 //                print("""
 //                    New key event:
@@ -60,8 +63,5 @@ struct KeyMapView: View {
                 drumState.setAllFalse()
                 return .handled
             })
-//            .onAppear {
-//                isFocused = true
-//            }
     }
 }

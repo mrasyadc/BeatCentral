@@ -14,7 +14,7 @@ struct DrumSetView: View {
     private let sizeModifier = 1.1
 
     var body: some View {
-        KeyMapView(isFocused: $isFocused, drumState: $drumState)
+        KeyMapView(drumState: $drumState)
 
         Image("OpenHiHat")
             .resizable()
@@ -30,9 +30,6 @@ struct DrumSetView: View {
                 height: drumState.isTomHighPressed ? 177.91609 * sizeModifier : 177.91609
             )
             .position(x: 412.87832, y: 335.95805)
-            .onTapGesture {
-                drumState.isTomHighPressed.toggle()
-            }
 
         Image("LoTom")
             .resizable()
@@ -41,9 +38,6 @@ struct DrumSetView: View {
                 height: drumState.isTomLowPressed ? 189 * sizeModifier : 189
             )
             .position(x: 584.4776, y: 296.5)
-            .onTapGesture {
-                drumState.isTomLowPressed.toggle()
-            }
 
         Image("FloorTom")
             .resizable()
@@ -52,9 +46,6 @@ struct DrumSetView: View {
                 height: drumState.isFloorTomPressed ? 245.84483 * sizeModifier : 245.84483
             )
             .position(x: 826.19386, y: 524.92242)
-            .onTapGesture {
-                drumState.isFloorTomPressed.toggle()
-            }
 
         Image("Kick")
             .resizable()
@@ -63,9 +54,6 @@ struct DrumSetView: View {
                 height: drumState.isKickPressed ? 284.91522 * sizeModifier : 284.91522
             )
             .position(x: 408.99994, y: 541.45761)
-            .onTapGesture {
-                drumState.isKickPressed.toggle()
-            }
 
         Image("Snare")
             .resizable()
@@ -74,9 +62,6 @@ struct DrumSetView: View {
                 height: drumState.isSnarePressed ? 283.45581 * sizeModifier : 283.45581
             )
             .position(x: 562.19362, y: 466.72791)
-            .onTapGesture {
-                drumState.isSnarePressed.toggle()
-            }
 
         Image("HiHat")
             .resizable()
@@ -85,9 +70,6 @@ struct DrumSetView: View {
                 height: drumState.isHihatPressed ? 208.68596 * sizeModifier : 208.68596
             )
             .position(x: 213.5, y: 394.34298)
-            .onTapGesture {
-                drumState.isHihatPressed.toggle()
-            }
 
         Image("Crash")
             .resizable()
@@ -96,9 +78,6 @@ struct DrumSetView: View {
                 height: drumState.isCrashPressed ? 302.64926 * sizeModifier : 302.64926
             )
             .position(x: 284.5, y: 214.32463)
-            .onTapGesture {
-                drumState.isCrashPressed.toggle()
-            }
 
         Image("Ride")
             .resizable()
@@ -107,9 +86,6 @@ struct DrumSetView: View {
                 height: drumState.isRidePressed ? 302.64926 * sizeModifier : 302.64926
             )
             .position(x: 782.5, y: 222.32463)
-            .onTapGesture {
-                drumState.isRidePressed.toggle()
-            }
     }
 }
 

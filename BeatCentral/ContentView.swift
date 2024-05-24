@@ -8,14 +8,12 @@
 import SwiftData
 import SwiftUI
 
-
-
 struct ContentView: View {
     @FocusState var isFocused: Bool
     @State private var drumState = Drum()
     var body: some View {
 //        Empty Text is used as focusable view
-        KeyMapView(isFocused: $isFocused, drumState: $drumState)
+        KeyMapView(drumState: $drumState)
 
         Button(action: {
             SoundInitializer.KICK?.playSound()

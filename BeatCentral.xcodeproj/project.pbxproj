@@ -32,6 +32,7 @@
 		9DC2427F2C00DB4F0008572D /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC2427E2C00DB4F0008572D /* BackgroundView.swift */; };
 		9DC242812C00DD980008572D /* DrumSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC242802C00DD980008572D /* DrumSetView.swift */; };
 		9DC242832C00F1F10008572D /* Drum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC242822C00F1F10008572D /* Drum.swift */; };
+		9DC242852C00FAD90008572D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC242842C00FAD90008572D /* MenuView.swift */; };
 		9DDB08F32BFC224F006B75C2 /* Snare_12_649.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9DDB08F22BFC224E006B75C2 /* Snare_12_649.wav */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		9DC2427E2C00DB4F0008572D /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		9DC242802C00DD980008572D /* DrumSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumSetView.swift; sourceTree = "<group>"; };
 		9DC242822C00F1F10008572D /* Drum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drum.swift; sourceTree = "<group>"; };
+		9DC242842C00FAD90008572D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		9DDB08F22BFC224E006B75C2 /* Snare_12_649.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Snare_12_649.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +141,7 @@
 				9D22E9A22BF5A0DA00438A3E /* Managers */,
 				9D1077FD2BF3258D003AEC57 /* BeatCentralApp.swift */,
 				9D1077FF2BF3258D003AEC57 /* ContentView.swift */,
+				9DC242842C00FAD90008572D /* MenuView.swift */,
 				9DC2427C2C00DB190008572D /* DrumView.swift */,
 				9DC242802C00DD980008572D /* DrumSetView.swift */,
 				9DC2427E2C00DB4F0008572D /* BackgroundView.swift */,
@@ -359,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DC2427F2C00DB4F0008572D /* BackgroundView.swift in Sources */,
+				9DC242852C00FAD90008572D /* MenuView.swift in Sources */,
 				9D1078002BF3258D003AEC57 /* ContentView.swift in Sources */,
 				9DC242832C00F1F10008572D /* Drum.swift in Sources */,
 				9D22E9B52BF6CF3C00438A3E /* KeyboardObserver.swift in Sources */,

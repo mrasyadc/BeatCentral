@@ -12,7 +12,7 @@ import SwiftUI
 struct BeatCentralApp: App {
     var body: some Scene {
         WindowGroup {
-            DrumView()
+            MenuView()
         }
     }
 }
