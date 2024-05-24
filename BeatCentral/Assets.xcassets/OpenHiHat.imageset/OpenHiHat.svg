@@ -1,0 +1,19 @@
+<svg width="233" height="255" viewBox="0 0 233 255" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="116.5" cy="123" rx="116.5" ry="116" fill="url(#paint0_radial_56_14439)"/>
+<ellipse cx="118" cy="124" rx="33" ry="32" fill="url(#paint1_radial_56_14439)"/>
+<path d="M18.9045 61L107 119.068C104.768 121.932 106.07 126.36 107 128.216L7.74303 166C-10.4342 114.136 7.61015 74.3902 18.9045 61Z" fill="white" fill-opacity="0.1"/>
+<path d="M203.046 46.8247L123.152 115.743C121.006 112.815 116.391 112.86 114.352 113.249L105.07 7.44951C159.925 4.10634 193.244 32.3067 203.046 46.8247Z" fill="white" fill-opacity="0.1"/>
+<path d="M104.022 237.601L117.372 132.938C120.926 133.681 124.328 130.562 125.585 128.91L203.211 201.393C164.648 240.548 121.017 241.847 104.022 237.601Z" fill="white" fill-opacity="0.1"/>
+<path d="M107 101C102.2 103 97 109.167 95 112L100.5 119L105.5 114.5L109.5 119L113 114.5L110 110.5L113 107L107 101Z" fill="#898A8C"/>
+<circle cx="117" cy="123" r="10" fill="#2C2B31"/>
+<defs>
+<radialGradient id="paint0_radial_56_14439" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(116.5 123) rotate(90) scale(116 116.5)">
+<stop stop-color="#F2D5B8"/>
+<stop offset="1" stop-color="#D27B14"/>
+</radialGradient>
+<radialGradient id="paint1_radial_56_14439" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(118 124) rotate(90) scale(32 33)">
+<stop stop-color="#F7D1AB"/>
+<stop offset="1" stop-color="#BA774D"/>
+</radialGradient>
+</defs>
+</svg>

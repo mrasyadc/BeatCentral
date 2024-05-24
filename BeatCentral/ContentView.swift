@@ -8,37 +8,13 @@
 import SwiftData
 import SwiftUI
 
-struct Drum {
-    var isHihatOpenPressed = false
-    var isHihatPressed = false
-    var isSnarePressed = false
-    var isKickPressed = false
-    var isTomHighPressed = false
-    var isTomLowPressed = false
-    var isFloorTomPressed = false
-    var isCrashPressed = false
-    var isRidePressed = false
 
-    mutating func setAllFalse() {
-        isHihatOpenPressed = false
-        isHihatPressed = false
-        isSnarePressed = false
-        isKickPressed = false
-        isTomHighPressed = false
-        isTomLowPressed = false
-        isFloorTomPressed = false
-        isCrashPressed = false
-        isRidePressed = false
-    }
-}
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
     @FocusState var isFocused: Bool
     @State private var drumState = Drum()
     var body: some View {
-//        Empty Text is used as focuseable view
+//        Empty Text is used as focusable view
         KeyMapView(isFocused: $isFocused, drumState: $drumState)
 
         Button(action: {
@@ -108,5 +84,4 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }

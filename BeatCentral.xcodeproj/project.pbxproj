@@ -28,6 +28,10 @@
 		9D8E76B12BFB237900E7E63D /* tomhigh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76A92BFB237900E7E63D /* tomhigh.wav */; };
 		9D8E76B32BFB2BD000E7E63D /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76B22BFB2BD000E7E63D /* kick.wav */; };
 		9D8E76B52BFB2C0900E7E63D /* KeyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8E76B42BFB2C0900E7E63D /* KeyMapView.swift */; };
+		9DC2427D2C00DB190008572D /* DrumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC2427C2C00DB190008572D /* DrumView.swift */; };
+		9DC2427F2C00DB4F0008572D /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC2427E2C00DB4F0008572D /* BackgroundView.swift */; };
+		9DC242812C00DD980008572D /* DrumSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC242802C00DD980008572D /* DrumSetView.swift */; };
+		9DC242832C00F1F10008572D /* Drum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC242822C00F1F10008572D /* Drum.swift */; };
 		9DDB08F32BFC224F006B75C2 /* Snare_12_649.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9DDB08F22BFC224E006B75C2 /* Snare_12_649.wav */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +78,10 @@
 		9D8E76A92BFB237900E7E63D /* tomhigh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tomhigh.wav; sourceTree = "<group>"; };
 		9D8E76B22BFB2BD000E7E63D /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kick.wav; sourceTree = "<group>"; };
 		9D8E76B42BFB2C0900E7E63D /* KeyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyMapView.swift; sourceTree = "<group>"; };
+		9DC2427C2C00DB190008572D /* DrumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumView.swift; sourceTree = "<group>"; };
+		9DC2427E2C00DB4F0008572D /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		9DC242802C00DD980008572D /* DrumSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumSetView.swift; sourceTree = "<group>"; };
+		9DC242822C00F1F10008572D /* Drum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drum.swift; sourceTree = "<group>"; };
 		9DDB08F22BFC224E006B75C2 /* Snare_12_649.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Snare_12_649.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,11 +133,15 @@
 		9D1077FC2BF3258D003AEC57 /* BeatCentral */ = {
 			isa = PBXGroup;
 			children = (
+				9DC2427B2C00D9860008572D /* Models */,
 				9DC2427A2BFD9EE30008572D /* Audio */,
 				9D22E9A52BF5A6A900438A3E /* Initializers */,
 				9D22E9A22BF5A0DA00438A3E /* Managers */,
 				9D1077FD2BF3258D003AEC57 /* BeatCentralApp.swift */,
 				9D1077FF2BF3258D003AEC57 /* ContentView.swift */,
+				9DC2427C2C00DB190008572D /* DrumView.swift */,
+				9DC242802C00DD980008572D /* DrumSetView.swift */,
+				9DC2427E2C00DB4F0008572D /* BackgroundView.swift */,
 				9D8E76B42BFB2C0900E7E63D /* KeyMapView.swift */,
 				9D1078032BF3258F003AEC57 /* Assets.xcassets */,
 				9D1078082BF3258F003AEC57 /* BeatCentral.entitlements */,
@@ -196,6 +208,14 @@
 				9D8E76A72BFB237900E7E63D /* tomlow.wav */,
 			);
 			path = Audio;
+			sourceTree = "<group>";
+		};
+		9DC2427B2C00D9860008572D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9DC242822C00F1F10008572D /* Drum.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,13 +358,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC2427F2C00DB4F0008572D /* BackgroundView.swift in Sources */,
 				9D1078002BF3258D003AEC57 /* ContentView.swift in Sources */,
+				9DC242832C00F1F10008572D /* Drum.swift in Sources */,
 				9D22E9B52BF6CF3C00438A3E /* KeyboardObserver.swift in Sources */,
 				9D8E76B52BFB2C0900E7E63D /* KeyMapView.swift in Sources */,
 				9D22E9A42BF5A0E600438A3E /* AudioManager.swift in Sources */,
+				9DC2427D2C00DB190008572D /* DrumView.swift in Sources */,
 				9D22E9A72BF5A6C600438A3E /* SoundInitializer.swift in Sources */,
 				9D22E9B12BF6C5DE00438A3E /* KeyboardManager.swift in Sources */,
 				9D1077FE2BF3258D003AEC57 /* BeatCentralApp.swift in Sources */,
+				9DC242812C00DD980008572D /* DrumSetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
