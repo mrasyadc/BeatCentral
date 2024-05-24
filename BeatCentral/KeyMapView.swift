@@ -26,7 +26,7 @@ struct KeyMapView: View {
                 case "x":
                     SoundInitializer.HIHATOPEN?.playSound()
                     drumState.isHihatOpenPressed.toggle()
-                case "cs":
+                case "c":
                     SoundInitializer.HIHAT?.playSound()
                     drumState.isHihatPressed.toggle()
                 case "v":
@@ -35,13 +35,13 @@ struct KeyMapView: View {
                 case "b":
                     SoundInitializer.KICK?.playSound()
                     drumState.isKickPressed.toggle()
-                case "g":
+                case "f":
                     SoundInitializer.TOMHIGH?.playSound()
                     drumState.isTomHighPressed.toggle()
-                case "h":
+                case "g":
                     SoundInitializer.TOMLOW?.playSound()
                     drumState.isTomLowPressed.toggle()
-                case "j":
+                case "h":
                     SoundInitializer.FLOORTOM?.playSound()
                     drumState.isFloorTomPressed.toggle()
                 case "r":
