@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "beatCentralBackground.svg",
+      "filename" : "iPad mini 8.3 - 18@3x-1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "iPad mini 8.3 - 18@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "iPad mini 8.3 - 18@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

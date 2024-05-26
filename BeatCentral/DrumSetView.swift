@@ -7,85 +7,145 @@
 
 import SwiftUI
 
-struct DrumSetView: View {
-    @FocusState var isFocused: Bool
-    @State private var drumState = Drum()
+struct DrumKitView: View {
+    var width: Double
+    var height: Double
+    var text: String
+    var xPosition: Double
+    var yPosition: Double
+    var state: Bool
+    var isTutorialModeOn: Bool
+    var image: String
 
-    private let sizeModifier = 1.1
+    var sizeModifier = 0.95
 
     var body: some View {
+        ZStack {
+            Image(image)
+                .resizable()
+                .frame(
+                    width: state ? width * sizeModifier : width,
+                    height: state ? height * sizeModifier : height
+                )
+            if isTutorialModeOn {
+                Text(text).font(Font.custom("Caveat Brush", size: 96))
+                    .foregroundColor(Color(red: 0.7, green: 0.11, blue: 0.11))
+            }
+
+        }.position(x: xPosition, y: yPosition)
+    }
+}
+
+struct DrumKitData {
+    var width: Double
+    var height: Double
+    var xPosition: Double
+    var yPosition: Double
+    var image: String
+    var state: Bool
+    var isTutorialModeOn: Bool
+}
+
+struct DrumSetView: View {
+    @FocusState var isFocused: Bool
+    @State var drumState = Drum()
+    @State var isTutorialModeOn: Bool = false
+
+    private let sizeModifier = 0.95
+
+    var body: some View {
+        // Define your data as an array of DrumKitData
+        let drumKitDataArray: [DrumKitData] = [
+            DrumKitData(width: 233, height: 254.575, xPosition: 197.5, yPosition: 545.2875, image: "OpenHiHat", state: drumState.isHihatOpenPressed, isTutorialModeOn: isTutorialModeOn),
+            DrumKitData(
+                width: 179.75664,
+                height: 177.91609,
+                xPosition: 412.87832,
+                yPosition: 335.95805,
+                image: "HiTom",
+                state: drumState.isTomHighPressed,
+                isTutorialModeOn: isTutorialModeOn
+            ),
+            DrumKitData(
+                width: 190.9552,
+                height: 189,
+                xPosition: 584.4776,
+                yPosition: 296.5,
+                image: "LoTom",
+                state: drumState.isTomLowPressed,
+                isTutorialModeOn: isTutorialModeOn
+            ),
+            DrumKitData(
+                width: 248.38773,
+                height: 245.84483,
+                xPosition: 826.19386,
+                yPosition: 524.92242,
+                image: "FloorTom",
+                state: drumState.isFloorTomPressed,
+                isTutorialModeOn: isTutorialModeOn
+            ),
+            DrumKitData(
+                width: 285.99988,
+                height: 284.91522,
+                xPosition: 408.99994,
+                yPosition: 541.45761,
+                image: "Kick",
+                state: drumState.isKickPressed,
+                isTutorialModeOn: isTutorialModeOn
+            ),
+            DrumKitData(
+                width: 286.38724,
+                height: 283.45581,
+                xPosition: 562.19362,
+                yPosition: 466.72791,
+                image: "Snare",
+                state: drumState.isSnarePressed,
+                isTutorialModeOn: isTutorialModeOn
+            ),
+            DrumKitData(
+                width: 191,
+                height: 208.68596,
+                xPosition: 213.5,
+                yPosition: 394.34298,
+                image: "HiHat",
+                state: drumState.isHihatPressed,
+                isTutorialModeOn: isTutorialModeOn
+            ),
+            DrumKitData(
+                width: 277,
+                height: 302.64926,
+                xPosition: 284.5,
+                yPosition: 214.32463,
+                image: "Crash",
+                state: drumState.isCrashPressed,
+                isTutorialModeOn: isTutorialModeOn
+            ),
+            DrumKitData(
+                width: 277,
+                height: 302.64926,
+                xPosition: 782.5,
+                yPosition: 222.32463,
+                image: "Ride",
+                state: drumState.isRidePressed,
+                isTutorialModeOn: isTutorialModeOn
+            )
+        ]
+
         KeyMapView(drumState: $drumState)
 
-        Image("OpenHiHat")
-            .resizable()
-            .frame(
-                width: drumState.isHihatOpenPressed ? 233 * sizeModifier : 233,
-                height: drumState.isHihatOpenPressed ? 254.575 * sizeModifier : 254.575
+        ForEach(drumKitDataArray.indices, id: \.self) { index in
+            let data = drumKitDataArray[index]
+            DrumKitView(
+                width: data.width,
+                height: data.height,
+                text: "C", // Assuming text is "C" as an example
+                xPosition: data.xPosition,
+                yPosition: data.yPosition,
+                state: data.state,
+                isTutorialModeOn: data.isTutorialModeOn,
+                image: data.image
             )
-            .position(x: 197.5, y: 545.2875)
-        Image("HiTom")
-            .resizable()
-            .frame(
-                width: drumState.isTomHighPressed ? 179.75664 * sizeModifier : 179.75664,
-                height: drumState.isTomHighPressed ? 177.91609 * sizeModifier : 177.91609
-            )
-            .position(x: 412.87832, y: 335.95805)
-
-        Image("LoTom")
-            .resizable()
-            .frame(
-                width: drumState.isTomLowPressed ? 190.9552 * sizeModifier : 190.9552,
-                height: drumState.isTomLowPressed ? 189 * sizeModifier : 189
-            )
-            .position(x: 584.4776, y: 296.5)
-
-        Image("FloorTom")
-            .resizable()
-            .frame(
-                width: drumState.isFloorTomPressed ? 248.38773 * sizeModifier : 248.38773,
-                height: drumState.isFloorTomPressed ? 245.84483 * sizeModifier : 245.84483
-            )
-            .position(x: 826.19386, y: 524.92242)
-
-        Image("Kick")
-            .resizable()
-            .frame(
-                width: drumState.isKickPressed ? 285.99988 * sizeModifier : 285.99988,
-                height: drumState.isKickPressed ? 284.91522 * sizeModifier : 284.91522
-            )
-            .position(x: 408.99994, y: 541.45761)
-
-        Image("Snare")
-            .resizable()
-            .frame(
-                width: drumState.isSnarePressed ? 286.38724 * sizeModifier : 286.38724,
-                height: drumState.isSnarePressed ? 283.45581 * sizeModifier : 283.45581
-            )
-            .position(x: 562.19362, y: 466.72791)
-
-        Image("HiHat")
-            .resizable()
-            .frame(
-                width: drumState.isHihatPressed ? 191 * sizeModifier : 191,
-                height: drumState.isHihatPressed ? 208.68596 * sizeModifier : 208.68596
-            )
-            .position(x: 213.5, y: 394.34298)
-
-        Image("Crash")
-            .resizable()
-            .frame(
-                width: drumState.isCrashPressed ? 277 * sizeModifier : 277,
-                height: drumState.isCrashPressed ? 302.64926 * sizeModifier : 302.64926
-            )
-            .position(x: 284.5, y: 214.32463)
-
-        Image("Ride")
-            .resizable()
-            .frame(
-                width: drumState.isRidePressed ? 277 * sizeModifier : 277,
-                height: drumState.isRidePressed ? 302.64926 * sizeModifier : 302.64926
-            )
-            .position(x: 782.5, y: 222.32463)
+        }
     }
 }
 

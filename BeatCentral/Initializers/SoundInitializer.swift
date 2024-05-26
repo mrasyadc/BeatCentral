@@ -15,4 +15,5 @@ enum SoundInitializer {
     static let SNARE = AudioManager(audioFileName: "Snare_12_649", fileType: "wav")
     static let TOMHIGH = AudioManager(audioFileName: "tomhigh", fileType: "wav")
     static let TOMLOW = AudioManager(audioFileName: "tomlow", fileType: "wav")
+    static let OPENING = AudioManager(audioFileName: "opening", fileType: "wav")
 }

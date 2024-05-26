@@ -18,6 +18,7 @@
 		9D22E9A72BF5A6C600438A3E /* SoundInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9A62BF5A6C600438A3E /* SoundInitializer.swift */; };
 		9D22E9B12BF6C5DE00438A3E /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */; };
 		9D22E9B52BF6CF3C00438A3E /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B42BF6CF3C00438A3E /* KeyboardObserver.swift */; };
+		9D3719982C01E3B800BC217A /* opening.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D3719972C01E3B800BC217A /* opening.wav */; };
 		9D8E76AA2BFB237900E7E63D /* snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76A22BFB237900E7E63D /* snare.wav */; };
 		9D8E76AB2BFB237900E7E63D /* hihat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76A32BFB237900E7E63D /* hihat.wav */; };
 		9D8E76AC2BFB237900E7E63D /* ride.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76A42BFB237900E7E63D /* ride.wav */; };
@@ -33,6 +34,7 @@
 		9DC242812C00DD980008572D /* DrumSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC242802C00DD980008572D /* DrumSetView.swift */; };
 		9DC242832C00F1F10008572D /* Drum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC242822C00F1F10008572D /* Drum.swift */; };
 		9DC242852C00FAD90008572D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC242842C00FAD90008572D /* MenuView.swift */; };
+		9DC242882C01DCAA0008572D /* CaveatBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DC242872C01DCAA0008572D /* CaveatBrush-Regular.ttf */; };
 		9DDB08F32BFC224F006B75C2 /* Snare_12_649.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9DDB08F22BFC224E006B75C2 /* Snare_12_649.wav */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,7 @@
 		9D22E9A62BF5A6C600438A3E /* SoundInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundInitializer.swift; sourceTree = "<group>"; };
 		9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		9D22E9B42BF6CF3C00438A3E /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		9D3719972C01E3B800BC217A /* opening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = opening.wav; sourceTree = "<group>"; };
 		9D8E76A22BFB237900E7E63D /* snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snare.wav; sourceTree = "<group>"; };
 		9D8E76A32BFB237900E7E63D /* hihat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hihat.wav; sourceTree = "<group>"; };
 		9D8E76A42BFB237900E7E63D /* ride.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ride.wav; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 		9DC242802C00DD980008572D /* DrumSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumSetView.swift; sourceTree = "<group>"; };
 		9DC242822C00F1F10008572D /* Drum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drum.swift; sourceTree = "<group>"; };
 		9DC242842C00FAD90008572D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		9DC242872C01DCAA0008572D /* CaveatBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CaveatBrush-Regular.ttf"; path = "/Users/muhammadrasyadcaesarardhi/Developments/swift/BeatCentral/BeatCentral/Fonts/CaveatBrush-Regular.ttf"; sourceTree = "<absolute>"; };
+		9DC242892C01DD6E0008572D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9DDB08F22BFC224E006B75C2 /* Snare_12_649.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Snare_12_649.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +140,8 @@
 		9D1077FC2BF3258D003AEC57 /* BeatCentral */ = {
 			isa = PBXGroup;
 			children = (
+				9DC242892C01DD6E0008572D /* Info.plist */,
+				9DC242862C01DC820008572D /* Fonts */,
 				9DC2427B2C00D9860008572D /* Models */,
 				9DC2427A2BFD9EE30008572D /* Audio */,
 				9D22E9A52BF5A6A900438A3E /* Initializers */,
@@ -206,6 +213,7 @@
 				9D8E76B22BFB2BD000E7E63D /* kick.wav */,
 				9D8E76A82BFB237900E7E63D /* hihatopen.wav */,
 				9D8E76A42BFB237900E7E63D /* ride.wav */,
+				9D3719972C01E3B800BC217A /* opening.wav */,
 				9D8E76A22BFB237900E7E63D /* snare.wav */,
 				9D8E76A92BFB237900E7E63D /* tomhigh.wav */,
 				9D8E76A72BFB237900E7E63D /* tomlow.wav */,
@@ -219,6 +227,14 @@
 				9DC242822C00F1F10008572D /* Drum.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9DC242862C01DC820008572D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9DC242872C01DCAA0008572D /* CaveatBrush-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,8 +344,10 @@
 				9D8E76AF2BFB237900E7E63D /* tomlow.wav in Resources */,
 				9DDB08F32BFC224F006B75C2 /* Snare_12_649.wav in Resources */,
 				9D8E76AD2BFB237900E7E63D /* crash.wav in Resources */,
+				9D3719982C01E3B800BC217A /* opening.wav in Resources */,
 				9D8E76AC2BFB237900E7E63D /* ride.wav in Resources */,
 				9D8E76B12BFB237900E7E63D /* tomhigh.wav in Resources */,
+				9DC242882C01DCAA0008572D /* CaveatBrush-Regular.ttf in Resources */,
 				9D8E76AE2BFB237900E7E63D /* floortom.wav in Resources */,
 				9D1078072BF3258F003AEC57 /* Preview Assets.xcassets in Resources */,
 				9D8E76AA2BFB237900E7E63D /* snare.wav in Resources */,
@@ -541,6 +559,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeatCentral/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -569,6 +588,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeatCentral/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
