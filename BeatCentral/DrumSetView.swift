@@ -44,19 +44,20 @@ struct DrumKitData {
     var image: String
     var state: Bool
     var isTutorialModeOn: Bool
+    var text: String
 }
 
 struct DrumSetView: View {
     @FocusState var isFocused: Bool
     @State var drumState = Drum()
-    @State var isTutorialModeOn: Bool = false
+    @Binding var isTutorialModeOn: Bool
 
     private let sizeModifier = 0.95
 
     var body: some View {
         // Define your data as an array of DrumKitData
         let drumKitDataArray: [DrumKitData] = [
-            DrumKitData(width: 233, height: 254.575, xPosition: 197.5, yPosition: 545.2875, image: "OpenHiHat", state: drumState.isHihatOpenPressed, isTutorialModeOn: isTutorialModeOn),
+            DrumKitData(width: 233, height: 254.575, xPosition: 197.5, yPosition: 545.2875, image: "OpenHiHat", state: drumState.isHihatOpenPressed, isTutorialModeOn: isTutorialModeOn, text: "C"),
             DrumKitData(
                 width: 179.75664,
                 height: 177.91609,
@@ -64,7 +65,8 @@ struct DrumSetView: View {
                 yPosition: 335.95805,
                 image: "HiTom",
                 state: drumState.isTomHighPressed,
-                isTutorialModeOn: isTutorialModeOn
+                isTutorialModeOn: isTutorialModeOn,
+                text: "G"
             ),
             DrumKitData(
                 width: 190.9552,
@@ -73,7 +75,8 @@ struct DrumSetView: View {
                 yPosition: 296.5,
                 image: "LoTom",
                 state: drumState.isTomLowPressed,
-                isTutorialModeOn: isTutorialModeOn
+                isTutorialModeOn: isTutorialModeOn,
+                text: "H"
             ),
             DrumKitData(
                 width: 248.38773,
@@ -82,7 +85,8 @@ struct DrumSetView: View {
                 yPosition: 524.92242,
                 image: "FloorTom",
                 state: drumState.isFloorTomPressed,
-                isTutorialModeOn: isTutorialModeOn
+                isTutorialModeOn: isTutorialModeOn,
+                text: "J"
             ),
             DrumKitData(
                 width: 285.99988,
@@ -91,7 +95,8 @@ struct DrumSetView: View {
                 yPosition: 541.45761,
                 image: "Kick",
                 state: drumState.isKickPressed,
-                isTutorialModeOn: isTutorialModeOn
+                isTutorialModeOn: isTutorialModeOn,
+                text: "B"
             ),
             DrumKitData(
                 width: 286.38724,
@@ -100,7 +105,8 @@ struct DrumSetView: View {
                 yPosition: 466.72791,
                 image: "Snare",
                 state: drumState.isSnarePressed,
-                isTutorialModeOn: isTutorialModeOn
+                isTutorialModeOn: isTutorialModeOn,
+                text: "V"
             ),
             DrumKitData(
                 width: 191,
@@ -109,7 +115,8 @@ struct DrumSetView: View {
                 yPosition: 394.34298,
                 image: "HiHat",
                 state: drumState.isHihatPressed,
-                isTutorialModeOn: isTutorialModeOn
+                isTutorialModeOn: isTutorialModeOn,
+                text: "X"
             ),
             DrumKitData(
                 width: 277,
@@ -118,7 +125,8 @@ struct DrumSetView: View {
                 yPosition: 214.32463,
                 image: "Crash",
                 state: drumState.isCrashPressed,
-                isTutorialModeOn: isTutorialModeOn
+                isTutorialModeOn: isTutorialModeOn,
+                text: "R"
             ),
             DrumKitData(
                 width: 277,
@@ -127,7 +135,8 @@ struct DrumSetView: View {
                 yPosition: 222.32463,
                 image: "Ride",
                 state: drumState.isRidePressed,
-                isTutorialModeOn: isTutorialModeOn
+                isTutorialModeOn: isTutorialModeOn,
+                text: "Y"
             )
         ]
 
@@ -138,7 +147,7 @@ struct DrumSetView: View {
             DrumKitView(
                 width: data.width,
                 height: data.height,
-                text: "C", // Assuming text is "C" as an example
+                text: data.text,
                 xPosition: data.xPosition,
                 yPosition: data.yPosition,
                 state: data.state,
@@ -147,8 +156,4 @@ struct DrumSetView: View {
             )
         }
     }
-}
-
-#Preview {
-    DrumSetView()
 }

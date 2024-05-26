@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9D1077FE2BF3258D003AEC57 /* BeatCentralApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1077FD2BF3258D003AEC57 /* BeatCentralApp.swift */; };
-		9D1078002BF3258D003AEC57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1077FF2BF3258D003AEC57 /* ContentView.swift */; };
 		9D1078042BF3258F003AEC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1078032BF3258F003AEC57 /* Assets.xcassets */; };
 		9D1078072BF3258F003AEC57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1078062BF3258F003AEC57 /* Preview Assets.xcassets */; };
 		9D1078122BF3258F003AEC57 /* BeatCentralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1078112BF3258F003AEC57 /* BeatCentralTests.swift */; };
@@ -58,7 +57,6 @@
 /* Begin PBXFileReference section */
 		9D1077FA2BF3258D003AEC57 /* BeatCentral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatCentral.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1077FD2BF3258D003AEC57 /* BeatCentralApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatCentralApp.swift; sourceTree = "<group>"; };
-		9D1077FF2BF3258D003AEC57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D1078032BF3258F003AEC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D1078062BF3258F003AEC57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D1078082BF3258F003AEC57 /* BeatCentral.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeatCentral.entitlements; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 				9D22E9A52BF5A6A900438A3E /* Initializers */,
 				9D22E9A22BF5A0DA00438A3E /* Managers */,
 				9D1077FD2BF3258D003AEC57 /* BeatCentralApp.swift */,
-				9D1077FF2BF3258D003AEC57 /* ContentView.swift */,
 				9DC242842C00FAD90008572D /* MenuView.swift */,
 				9DC2427C2C00DB190008572D /* DrumView.swift */,
 				9DC242802C00DD980008572D /* DrumSetView.swift */,
@@ -381,7 +378,6 @@
 			files = (
 				9DC2427F2C00DB4F0008572D /* BackgroundView.swift in Sources */,
 				9DC242852C00FAD90008572D /* MenuView.swift in Sources */,
-				9D1078002BF3258D003AEC57 /* ContentView.swift in Sources */,
 				9DC242832C00F1F10008572D /* Drum.swift in Sources */,
 				9D22E9B52BF6CF3C00438A3E /* KeyboardObserver.swift in Sources */,
 				9D8E76B52BFB2C0900E7E63D /* KeyMapView.swift in Sources */,
