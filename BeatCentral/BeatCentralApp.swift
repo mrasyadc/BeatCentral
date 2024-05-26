@@ -13,6 +13,8 @@ struct BeatCentralApp: App {
     var body: some Scene {
         WindowGroup {
             MenuView()
+                .frame(width: 1072, height: 745)
+
         }.windowResizabilityContentSize()
     }
 }

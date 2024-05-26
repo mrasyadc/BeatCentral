@@ -57,7 +57,7 @@ struct DrumSetView: View {
     var body: some View {
         // Define your data as an array of DrumKitData
         let drumKitDataArray: [DrumKitData] = [
-            DrumKitData(width: 233, height: 254.575, xPosition: 197.5, yPosition: 545.2875, image: "OpenHiHat", state: drumState.isHihatOpenPressed, isTutorialModeOn: isTutorialModeOn, text: "C"),
+            DrumKitData(width: 233, height: 254.575, xPosition: 259.5, yPosition: 559.2875, image: "OpenHiHat", state: drumState.isHihatOpenPressed, isTutorialModeOn: isTutorialModeOn, text: "C"),
             DrumKitData(
                 width: 179.75664,
                 height: 177.91609,
@@ -66,7 +66,7 @@ struct DrumSetView: View {
                 image: "HiTom",
                 state: drumState.isTomHighPressed,
                 isTutorialModeOn: isTutorialModeOn,
-                text: "G"
+                text: "F"
             ),
             DrumKitData(
                 width: 190.9552,
@@ -76,23 +76,23 @@ struct DrumSetView: View {
                 image: "LoTom",
                 state: drumState.isTomLowPressed,
                 isTutorialModeOn: isTutorialModeOn,
-                text: "H"
+                text: "G"
             ),
             DrumKitData(
                 width: 248.38773,
                 height: 245.84483,
-                xPosition: 826.19386,
-                yPosition: 524.92242,
+                xPosition: 815.19386,
+                yPosition: 457.92242,
                 image: "FloorTom",
                 state: drumState.isFloorTomPressed,
                 isTutorialModeOn: isTutorialModeOn,
-                text: "J"
+                text: "H"
             ),
             DrumKitData(
                 width: 285.99988,
                 height: 284.91522,
-                xPosition: 408.99994,
-                yPosition: 541.45761,
+                xPosition: 573.99994,
+                yPosition: 578.45761,
                 image: "Kick",
                 state: drumState.isKickPressed,
                 isTutorialModeOn: isTutorialModeOn,
@@ -101,8 +101,8 @@ struct DrumSetView: View {
             DrumKitData(
                 width: 286.38724,
                 height: 283.45581,
-                xPosition: 562.19362,
-                yPosition: 466.72791,
+                xPosition: 457.19362,
+                yPosition: 477.72791,
                 image: "Snare",
                 state: drumState.isSnarePressed,
                 isTutorialModeOn: isTutorialModeOn,
@@ -111,8 +111,8 @@ struct DrumSetView: View {
             DrumKitData(
                 width: 191,
                 height: 208.68596,
-                xPosition: 213.5,
-                yPosition: 394.34298,
+                xPosition: 201.5,
+                yPosition: 415.34298,
                 image: "HiHat",
                 state: drumState.isHihatPressed,
                 isTutorialModeOn: isTutorialModeOn,
@@ -121,8 +121,8 @@ struct DrumSetView: View {
             DrumKitData(
                 width: 277,
                 height: 302.64926,
-                xPosition: 284.5,
-                yPosition: 214.32463,
+                xPosition: 278.5,
+                yPosition: 202.32463,
                 image: "Crash",
                 state: drumState.isCrashPressed,
                 isTutorialModeOn: isTutorialModeOn,
