@@ -15,8 +15,6 @@
 		9D10781E2BF3258F003AEC57 /* BeatCentralUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10781D2BF3258F003AEC57 /* BeatCentralUITestsLaunchTests.swift */; };
 		9D22E9A42BF5A0E600438A3E /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9A32BF5A0E600438A3E /* AudioManager.swift */; };
 		9D22E9A72BF5A6C600438A3E /* SoundInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9A62BF5A6C600438A3E /* SoundInitializer.swift */; };
-		9D22E9B12BF6C5DE00438A3E /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */; };
-		9D22E9B52BF6CF3C00438A3E /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9B42BF6CF3C00438A3E /* KeyboardObserver.swift */; };
 		9D3719982C01E3B800BC217A /* opening.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D3719972C01E3B800BC217A /* opening.wav */; };
 		9D8E76AA2BFB237900E7E63D /* snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76A22BFB237900E7E63D /* snare.wav */; };
 		9D8E76AB2BFB237900E7E63D /* hihat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9D8E76A32BFB237900E7E63D /* hihat.wav */; };
@@ -67,8 +65,6 @@
 		9D10781D2BF3258F003AEC57 /* BeatCentralUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatCentralUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9D22E9A32BF5A0E600438A3E /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		9D22E9A62BF5A6C600438A3E /* SoundInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundInitializer.swift; sourceTree = "<group>"; };
-		9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
-		9D22E9B42BF6CF3C00438A3E /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		9D3719972C01E3B800BC217A /* opening.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = opening.wav; sourceTree = "<group>"; };
 		9D8E76A22BFB237900E7E63D /* snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snare.wav; sourceTree = "<group>"; };
 		9D8E76A32BFB237900E7E63D /* hihat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hihat.wav; sourceTree = "<group>"; };
@@ -186,8 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				9D22E9A32BF5A0E600438A3E /* AudioManager.swift */,
-				9D22E9B02BF6C5DE00438A3E /* KeyboardManager.swift */,
-				9D22E9B42BF6CF3C00438A3E /* KeyboardObserver.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -379,12 +373,10 @@
 				9DC2427F2C00DB4F0008572D /* BackgroundView.swift in Sources */,
 				9DC242852C00FAD90008572D /* MenuView.swift in Sources */,
 				9DC242832C00F1F10008572D /* Drum.swift in Sources */,
-				9D22E9B52BF6CF3C00438A3E /* KeyboardObserver.swift in Sources */,
 				9D8E76B52BFB2C0900E7E63D /* KeyMapView.swift in Sources */,
 				9D22E9A42BF5A0E600438A3E /* AudioManager.swift in Sources */,
 				9DC2427D2C00DB190008572D /* DrumView.swift in Sources */,
 				9D22E9A72BF5A6C600438A3E /* SoundInitializer.swift in Sources */,
-				9D22E9B12BF6C5DE00438A3E /* KeyboardManager.swift in Sources */,
 				9D1077FE2BF3258D003AEC57 /* BeatCentralApp.swift in Sources */,
 				9DC242812C00DD980008572D /* DrumSetView.swift in Sources */,
 			);
