@@ -17,7 +17,10 @@ struct DrumView: View {
                 HStack {
                     Spacer()
                     VStack(alignment: .center, spacing: 0) {
-                        Image(systemName: isTutorialModeOn ? "xmark" : "questionmark").resizable().frame(width: 48).font(.system(size: 48, weight: .bold))
+                        Image(systemName: isTutorialModeOn ? "xmark" : "questionmark")
+                            .resizable()
+                            .frame(width: 48)
+                            .font(.system(size: 48, weight: .bold))
                     }
                     .padding(.horizontal, 15)
                     .padding(.vertical, 10)
@@ -34,7 +37,6 @@ struct DrumView: View {
                     }.padding().padding()
                 }
                 Spacer()
-
             }
         }
     }

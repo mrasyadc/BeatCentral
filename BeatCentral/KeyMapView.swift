@@ -18,13 +18,6 @@ struct KeyMapView: View {
                 isFocused = true
             }
             .onKeyPress(phases: .down, action: { keyPress in
-//                print("""
-//                    New key event:
-//                    Key: \(keyPress.characters)
-//                    Modifiers: \(keyPress.modifiers)
-//                    Phase: \(keyPress.phase)
-//                    Debug description: \(keyPress.debugDescription)
-//                """)
                 switch keyPress.characters {
                 case "c":
                     SoundInitializer.HIHATOPEN?.playSound()
